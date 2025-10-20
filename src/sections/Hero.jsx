@@ -8,9 +8,9 @@ const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
   
   // UPDATED TEXT: Adjusted line breaks for a more balanced look
-  const text = `I am a Social Media and Digital Marketing Specialist, 
-passionate about assisting brands and company owners 
-in creating and maintaining an online presence`;
+  const text = `Social Media and Digital Marketing Specialist,  
+Creating and maintaining an online presence
+Assisting brands and company owners`;
 
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">

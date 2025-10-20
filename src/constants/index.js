@@ -1,181 +1,172 @@
 // index.js
+
 export const servicesData = [
   {
-    title: "FullStack Development",
+    title: "Social Media Management",
     description:
-      "Your business deserves a fast, secure, and future-proof digital foundation. I develop custom web apps with clean architecture, optimized databases, and seamless integrations—ensuring reliability at every layer.",
+      "Let me take the hassle out of your social media. I will develop a tailored strategy, create and schedule content, engage with your audience, and track your performance.",
     items: [
       {
-        title: "Backend Engineering",
-        description: "(REST/GraphQL APIs, Microservices, Auth Systems)",
+        title: "Profile setup & optimization",
+        description: "(Ensuring your brand looks professional)",
       },
       {
-        title: "Frontend Excellence",
-        description: "(React, Vue, TypeScript, Interactive UI/UX)",
+        title: "Content calendar planning",
+        description: "(Strategic and consistent posting)",
       },
       {
-        title: "Database Design",
-        description: "(SQL/NoSQL Optimization, Scalable Structures)",
+        title: "Community engagement",
+        description: "(Responding to comments and messages)",
+      },
+      {
+        title: "Monthly analytics report",
+        description: "(Tracking growth and KPIs)",
       },
     ],
   },
   {
-    title: "DevOps & Cloud Solutions",
+    title: "Content Creation",
     description:
-      "Deploying software shouldn't be a gamble. I automate infrastructure, enforce security, and leverage cloud platforms (AWS/Azure) to keep your app running smoothly—24/7, at any scale.",
+      "Content is king, and I am here to create it for you. I will create high-quality, relevant, and engaging content that resonates with your target audience and aligns with your brand's voice.",
     items: [
       {
-        title: "CI/CD Pipelines",
-        description: "(GitHub Actions, Docker, Kubernetes)",
+        title: "Copywriting & graphic design",
+        description: "(Captions, carousels, and stories)",
       },
       {
-        title: "Server Management ",
-        description: "(Linux, Nginx, Load Balancing)",
+        title: "Reel & video editing",
+        description: "(Short-form video for maximum reach)",
       },
       {
-        title: "Performance Tuning",
-        description: "(Caching, Compression, Lighthouse 90+ Scores)",
+        title: "User-generated content (UGC)",
+        description: "(Authentic content that builds trust)",
+      },
+      {
+        title: "Brand-specific templates",
+        description: "(Cohesive and aesthetic feed design)",
       },
     ],
   },
   {
-    title: "Security & Optimization",
+    title: "Consultation",
     description:
-      "Slow or hacked apps destroy trust. I harden security (XSS/SQLI protection, OAuth) and optimize bottlenecks so your app stays fast, safe, and scalable as you grow.",
+      "Need guidance on your social media strategy? I offer one-on-one consultation sessions to help you identify areas for improvement and develop a roadmap for success.",
     items: [
       {
-        title: "Code Audits",
-        description: "(Refactoring, Tech Debt Cleanup)",
+        title: "Social media audit",
+        description: "(In-depth analysis of your current presence)",
       },
       {
-        title: "Pen Testing",
-        description: "(Vulnerability Assessments)",
+        title: "Strategy development",
+        description: "(A custom plan to achieve your goals)",
       },
       {
-        title: "SEO Tech Stack",
-        description: "(SSR, Metadata, Structured Data)",
-      },
-    ],
-  },
-  {
-    title: "Web & Mobile Apps",
-    description:
-      "A clunky interface can sink even the best ideas. I craft responsive, pixel perfect web and mobile apps (React Native/Flutter) that users love—bridging design and functionality seamlessly.",
-    items: [
-      {
-        title: "Cross-Platform Apps",
-        description: "(Single codebase for iOS/Android/Web)",
+        title: "Q&A session",
+        description: "(Answering all your social media questions)",
       },
       {
-        title: "PWAs",
-        description: "(Offline mode, Push Notifications)",
-      },
-      {
-        title: "E-Commerce",
-        description: "(Checkout flows, Payment Gateways, Inventory APIs)",
+        title: "Actionable feedback",
+        description: "(Practical steps you can implement immediately)",
       },
     ],
   },
 ];
+
+// UPDATED: Replaced with Rorisang's campaigns
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Ponds x A-Reece",
     description:
-      "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
-    href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+      "Influencer marketing campaign management for the Ponds SA Perfect Colour Complex Launch.",
+    href: "https://www.instagram.com/reel/Cw4kEhgNUzy/",
+    image: "/assets/projects/ponds-1.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
-      { id: 5, name: "Tailwind CSS" },
+      { id: 1, name: "Influencer Marketing" },
+      { id: 2, name: "Campaign Management" },
+      { id: 3, name: "Ponds SA" },
     ],
   },
   {
     id: 2,
-    name: "Plant Shop E-commerce",
+    name: "Ponds x AAYANDATHABETHE",
     description:
-      "An online store specializing in rare and decorative plants with a clean, user-friendly interface.",
-    href: "",
-    image: "/assets/projects/plant-shop.jpg",
+      "Managing influencer briefs, proposals, and campaign monitoring for Ponds SA.",
+    href: "https://www.instagram.com/p/CxPQ54TP_1F/",
+    image: "/assets/projects/ponds-2.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "React" },
-      { id: 2, name: "Next.js" },
-      { id: 3, name: "Stripe API" },
-      { id: 4, name: "Tailwind CSS" },
+      { id: 1, name: "Influencer Briefs" },
+      { id: 2, name: "Social Media Strategy" },
+      { id: 3, name: "Ponds SA" },
     ],
   },
   {
     id: 3,
-    name: "Apple Tech Marketplace",
+    name: "Ponds x Thembiseete",
     description:
-      "An e-commerce platform for Apple products and accessories with deals and category filtering.",
-    href: "",
-    image: "/assets/projects/apple-tech-store.jpg",
+      "A successful influencer collaboration combining content creation and strategic campaign execution.",
+    href: "https://www.instagram.com/p/Cxw-L-Mtb6O/",
+    image: "/assets/projects/ponds-3.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Blazor" },
-      { id: 2, name: "ASP.NET Core" },
-      { id: 3, name: "SQL Server" },
-      { id: 4, name: "Bootstrap" },
+      { id: 1, name: "Content Creation" },
+      { id: 2, name: "Campaign Reporting" },
+      { id: 3, name: "Ponds SA" },
     ],
   },
+  // You can remove the other 3 projects, or add more of Rorisang's work
   {
     id: 4,
-    name: "Electronics & Gadgets Store",
+    name: "Jet Fashion",
     description:
-      "A multi-category online shop featuring electronics, home appliances, and gaming gear with special offers.",
-    href: "",
-    image: "/assets/projects/electronics-store.jpg",
+      "Community management for Jet Fashion, including the award-winning #ClearTheStigma campaign.",
+    href: "https://www.instagram.com/jet_fashion/", // NOTE: Change this link if you have a better one
+    image: "/assets/projects/jet.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
-      { id: 1, name: "Vue.js" },
-      { id: 2, name: "Laravel" },
-      { id: 3, name: "MySQL" },
-      { id: 4, name: "SCSS" },
+      { id: 1, name: "Community Management" },
+      { id: 2, name: "Campaign Strategy" },
+      { id: 3, "name": "Award-Winning" },
     ],
   },
   {
     id: 5,
-    name: "Home Decor Marketplace",
+    name: "Chamberlain",
     description:
-      "A curated collection of designer home decor items, including furniture and artisan vases.",
-    href: "",
-    image: "/assets/projects/home-decor-store.jpg",
+      "Social media specialist role, developing and managing social strategy, content, and paid media campaigns.",
+    href: "https://www.instagram.com/chamberlainsa/", // NOTE: Change this link if you have a better one
+    image: "/assets/projects/chamberlain.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
-      { id: 1, name: "Angular" },
-      { id: 2, name: "Firebase" },
-      { id: 3, name: "GraphQL" },
-      { id: 4, name: "Material UI" },
+      { id: 1, name: "Social Media Strategy" },
+      { id: 2, name: "Content Creation" },
+      { id: 3, name: "Paid Media" },
     ],
   },
   {
     id: 6,
-    name: "Digital Game Store",
+    name: "Dischem Baby City",
     description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
+      "Content creator for Facebook & Instagram, writing and reviewing relatable motherhood content.",
+    href: "https://www.instagram.com/dischembabycity/", // NOTE: Change this link if you have a better one
+    image: "/assets/projects/dischem.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "Svelte" },
-      { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 1, name: "Content Creation" },
+      { id: 2, name: "Copywriting" },
+      { id: 3, name: "SEO" },
     ],
   },
 ];
+
+// UPDATED: Replaced with Rorisang's social links
 export const socials = [
-  { name: "Instagram", href: "https://www.instagram.com/ali.sanatidev/reels/" },
   {
-    name: "Youtube",
-    href: "https://www.youtube.com/channel/UCZhtUWTtk3bGJiMPN9T4HWA",
+    name: "LinkedIn",
+    href: "https://www.linkedin.com/in/rorisang-mathe-b98491130",
   },
-  { name: "LinkedIn", href: "https://www.linkedin.com/in/ali-sanati/" },
-  { name: "GitHub", href: "https://github.com/Ali-Sanati" },
+  { name: "Email", href: "mailto:rorisangmconsultancy@gmail.com" },
+  { name: "WhatsApp", href: "https://wa.me/27764651322" },
 ];
