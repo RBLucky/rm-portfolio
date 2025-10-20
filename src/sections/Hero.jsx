@@ -3,16 +3,20 @@ import { Planet } from "../components/Planet";
 import { Environment, Float, Lightformer } from "@react-three/drei";
 import { useMediaQuery } from "react-responsive";
 import AnimatedHeaderSection from "../components/AnimatedHeaderSection";
+
 const Hero = () => {
   const isMobile = useMediaQuery({ maxWidth: 853 });
-  const text = `I help growing brands and startups gain an
-unfair advantage through premium
-results driven webs/apps`;
+  
+  // UPDATED TEXT: Adjusted line breaks for a more balanced look
+  const text = `I am a Social Media and Digital Marketing Specialist, 
+passionate about assisting brands and company owners 
+in creating and maintaining an online presence`;
+
   return (
     <section id="home" className="flex flex-col justify-end min-h-screen">
       <AnimatedHeaderSection
-        subTitle={"404 No Bugs Found"}
-        title={"Ali Sanati"}
+        subTitle={"Social Media Specialist"}
+        title={"Rorisang Mathe"}
         text={text}
         textColor={"text-black"}
       />
