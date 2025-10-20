@@ -5,15 +5,25 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 
 const About = () => {
-  const text = `Passionate about clean architecture
-    I build scalable, high-performance solutions
-    from prototype to production`;
-  const aboutText = `Obsessed with building fast, intuitive apps—from pixel-perfect React UIs to bulletproof serverless backends. Every line of code is a promise: quality that users feel.
-  When I’m not shipping:
-⚡️ Open-sourcing my latest experiment (or hacking on yours)
-🎥 Teaching devs on Twitch/YouTube—because rising tides lift all ships
-🧗 Rock climbing (problem-solving with real stakes)
-🎸 Strumming chords while CI pipelines pass (multitasking at its finest)`;
+  // Punchier header text
+  const text = `Strategic. Creative. Results-Driven.
+  I build passionate online communities
+  and help brands grow.`;
+
+  // Refined body text with "##" markers for subheadings
+  const aboutText = `I am a Social Media and Digital Marketing Specialist. 
+My passion is assisting brands and company owners 
+in creating and maintaining an online presence.
+## I HELP BRANDS:
+  🤝 Connect with their audiences
+  ❤️ Build brand loyalty
+  📈 Drive business growth
+## MY CORE SKILLS INCLUDE:
+  ✨ Developing social media strategies
+  🎨 Creating engaging content
+  💬 Managing online communities
+  📊 Analyzing social media performance`;
+
   const imgRef = useRef(null);
   useGSAP(() => {
     gsap.to("#about", {
@@ -41,7 +51,7 @@ const About = () => {
   return (
     <section id="about" className="min-h-screen bg-black rounded-b-4xl">
       <AnimatedHeaderSection
-        subTitle={"Cod with purpose, Built to scale"}
+        subTitle={"About Me"}
         title={"About"}
         text={text}
         textColor={"text-white"}
@@ -50,8 +60,8 @@ const About = () => {
       <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
         <img
           ref={imgRef}
-          src="images/man.jpg"
-          alt="man"
+          src="images/man.jpg" // NOTE: This image still needs to be replaced
+          alt="Rorisang Mathe"
           className="w-md rounded-3xl"
         />
         <AnimatedTextLines text={aboutText} className={"w-full"} />

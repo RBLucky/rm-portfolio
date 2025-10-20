@@ -5,15 +5,22 @@ import { socials } from "../constants";
 import gsap from "gsap";
 
 const Contact = () => {
-  const text = `Got a question, how or project Idea?
-    WE’D love to hear from you and discus further!`;
+  // Use the shorter text we agreed on
+  const text = `Have a project in mind?
+    Let's connect and build your brand.`;
+
+  // Marquee items reflect Rorisang's services
   const items = [
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
-    "just imagin, I code",
+    "Social Media Management",
+    "Content Creation",
+    "Consultation",
+    "Digital Marketing",
+    "Social Media Management",
+    "Content Creation",
+    "Consultation",
+    "Digital Marketing",
   ];
+
   useGSAP(() => {
     gsap.from(".social-link", {
       y: 100,
@@ -27,6 +34,7 @@ const Contact = () => {
       },
     });
   }, []);
+
   return (
     <section
       id="contact"
@@ -34,32 +42,36 @@ const Contact = () => {
     >
       <div>
         <AnimatedHeaderSection
-          subTitle={"You Dream It, I Code it"}
+          subTitle={"Let's Grow Your Brand"}
           title={"Contact"}
           text={text}
           textColor={"text-white"}
           withScrollTrigger={true}
         />
         <div className="flex px-10 font-light text-white uppercase lg:text-[32px] text-[26px] leading-none mb-10">
+          {/* REVERTED: Back to the original 3-section layout */}
           <div className="flex flex-col w-full gap-10">
             <div className="social-link">
               <h2>E-mail</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
-                JohnDoe@gmail.com
+                {/* UPDATED: Rorisang's Email */}
+                rorisangmconsultancy@gmail.com
               </p>
             </div>
             <div className="social-link">
               <h2>Phone</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl lowercase md:text-2xl lg:text-3xl">
-                +33 7 12 12 32 12
+                {/* UPDATED: Rorisang's Phone */}
+                +27 76 465 1322
               </p>
             </div>
             <div className="social-link">
               <h2>Social Media</h2>
               <div className="w-full h-px my-2 bg-white/30" />
               <div className="flex flex-wrap gap-2">
+                {/* This pulls from constants/index.js (LinkedIn, Email, WhatsApp) */}
                 {socials.map((social, index) => (
                   <a
                     key={index}
