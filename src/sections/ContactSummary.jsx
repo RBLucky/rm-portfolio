@@ -5,19 +5,23 @@ import gsap from "gsap";
 
 const ContactSummary = () => {
   const containerRef = useRef(null);
+  
+  // UPDATED: Replaced with Rorisang's service keywords
   const items = [
-    "Innovation",
-    "Precision",
-    "Trust",
-    "Collaboration",
-    "Excellence",
+    "Creative",
+    "Strategic",
+    "Engaging",
+    "Results-Driven",
+    "Passionate",
   ];
+  
+  // UPDATED: Changed the call to action
   const items2 = [
-    "contact us",
-    "contact us",
-    "contact us",
-    "contact us",
-    "contact us",
+    "Let's Connect",
+    "Let's Connect",
+    "Let's Connect",
+    "Let's Connect",
+    "Let's Connect",
   ];
 
   useGSAP(() => {
@@ -41,10 +45,11 @@ const ContactSummary = () => {
       <Marquee items={items} />
       <div className="overflow-hidden font-light text-center contact-text-responsive">
         <p>
+          {/* UPDATED: Changed "web application" to "online presence" */}
           “ Let’s build a <br />
           <span className="font-normal">memorable</span> &{" "}
           <span className="italic">inspiring</span> <br />
-          web application <span className="text-gold">together</span> “
+          online presence <span className="text-gold">together</span> “
         </p>
       </div>
       <Marquee
