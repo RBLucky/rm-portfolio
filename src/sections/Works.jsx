@@ -10,9 +10,11 @@ const Works = () => {
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  const text = `Featured projects that have been meticulously
-    crafted with passion to drive
-    results and impact.`;
+  
+  // UPDATED: New text to match Rorisang's profile
+  const text = `Featured campaigns and brand collaborations 
+    that build audiences and create 
+    real engagement.`;
 
   const mouse = useRef({ x: 0, y: 0 });
   const moveX = useRef(null);
@@ -102,7 +104,8 @@ const Works = () => {
   return (
     <section id="work" className="flex flex-col min-h-screen">
       <AnimatedHeaderSection
-        subTitle={"Logic meets Aesthetics, Seamlessly"}
+        // UPDATED: New subTitle
+        subTitle={"Strategy meets Creativity"}
         title={"Works"}
         text={text}
         textColor={"text-black"}
@@ -113,8 +116,12 @@ const Works = () => {
         onMouseMove={handleMouseMove}
       >
         {projects.map((project, index) => (
-          <div
+          // UPDATED: Wrapped the project in an <a> tag to make it clickable
+          <a
             key={project.id}
+            href={project.href}
+            target="_blank" // Opens the link in a new tab
+            rel="noopener noreferrer" // Security best practice for new tabs
             id="project"
             className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
             onMouseEnter={() => handleMouseEnter(index)}
@@ -161,7 +168,7 @@ const Works = () => {
                 className="absolute bg-center px-14 rounded-xl"
               />
             </div>
-          </div>
+          </a>
         ))}
         {/* desktop Flaoting preview image */}
         <div
