@@ -10,7 +10,7 @@ const Works = () => {
   const previewRef = useRef(null);
 
   const [currentIndex, setCurrentIndex] = useState(null);
-  
+
   // UPDATED: New text to match Rorisang's profile
   const text = `Featured campaigns and brand collaborations 
     that build audiences and create 
@@ -173,7 +173,13 @@ const Works = () => {
         {/* desktop Flaoting preview image */}
         <div
           ref={previewRef}
-          className="fixed -top-2/6 left-0 z-50 overflow-hidden border-8 border-black pointer-events-none w-[960px] md:block hidden opacity-0"
+          // UPDATED: Removed centering classes (top-1/2, left-1/2, etc.)
+          // Set to top-0 left-0 so GSAP can control position from the origin
+          // Kept new size (w-[500px] h-[350px]) and added rounded-lg
+          className="fixed top-0 left-0 z-50 overflow-hidden 
+                     border-8 border-black pointer-events-none 
+                     w-[500px] h-[350px] md:block hidden opacity-0 
+                     rounded-lg"
         >
           {currentIndex !== null && (
             <img

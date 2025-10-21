@@ -76,11 +76,11 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Ponds x A-Reece",
+    name: "Ponds Perfect Colour Complex Launch",
     description:
       "Influencer marketing campaign management for the Ponds SA Perfect Colour Complex Launch.",
     href: "https://www.instagram.com/reel/Cw4kEhgNUzy/",
-    image: "/assets/projects/ponds-1.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/ponds-1.png", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "Influencer Marketing" },
@@ -90,11 +90,11 @@ export const projects = [
   },
   {
     id: 2,
-    name: "Ponds x AAYANDATHABETHE",
+    name: "PONDS' AGE MIRACLE Launch",
     description:
       "Managing influencer briefs, proposals, and campaign monitoring for Ponds SA.",
     href: "https://www.instagram.com/p/CxPQ54TP_1F/",
-    image: "/assets/projects/ponds-2.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/ponds-2.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "Influencer Briefs" },
@@ -104,16 +104,16 @@ export const projects = [
   },
   {
     id: 3,
-    name: "Ponds x Thembiseete",
+    name: "Steve Madden SA",
     description:
       "A successful influencer collaboration combining content creation and strategic campaign execution.",
     href: "https://www.instagram.com/p/Cxw-L-Mtb6O/",
-    image: "/assets/projects/ponds-3.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/steve-1.jpg",
     bgImage: "/assets/backgrounds/map.jpg",
     frameworks: [
-      { id: 1, name: "Content Creation" },
+      { id: 1, name: "Influencer Marketing Strategy" },
       { id: 2, name: "Campaign Reporting" },
-      { id: 3, name: "Ponds SA" },
+      { id: 3, name: "Steve Madden SA" },
     ],
   },
   // You can remove the other 3 projects, or add more of Rorisang's work
@@ -123,7 +123,7 @@ export const projects = [
     description:
       "Community management for Jet Fashion, including the award-winning #ClearTheStigma campaign.",
     href: "https://www.instagram.com/jet_fashion/", // NOTE: Change this link if you have a better one
-    image: "/assets/projects/jet.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/jet-1.png", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/poster.jpg",
     frameworks: [
       { id: 1, name: "Community Management" },
@@ -137,7 +137,7 @@ export const projects = [
     description:
       "Social media specialist role, developing and managing social strategy, content, and paid media campaigns.",
     href: "https://www.instagram.com/chamberlainsa/", // NOTE: Change this link if you have a better one
-    image: "/assets/projects/chamberlain.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/chamberlain-1.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/table.jpg",
     frameworks: [
       { id: 1, name: "Social Media Strategy" },
@@ -151,7 +151,7 @@ export const projects = [
     description:
       "Content creator for Facebook & Instagram, writing and reviewing relatable motherhood content.",
     href: "https://www.instagram.com/dischembabycity/", // NOTE: Change this link if you have a better one
-    image: "/assets/projects/dischem.jpg", // NOTE: You will need to change this image
+    image: "/assets/projects/dischembabycity.jpg", // NOTE: You will need to change this image
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
       { id: 1, name: "Content Creation" },

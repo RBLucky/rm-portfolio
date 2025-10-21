@@ -56,7 +56,7 @@ const Contact = () => {
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl tracking-wider lowercase md:text-2xl lg:text-3xl">
                 {/* UPDATED: Rorisang's Email */}
-                rorisangmconsultancy@gmail.com
+                rorisangmathe94@gmail.com
               </p>
             </div>
             <div className="social-link">
@@ -64,7 +64,7 @@ const Contact = () => {
               <div className="w-full h-px my-2 bg-white/30" />
               <p className="text-xl lowercase md:text-2xl lg:text-3xl">
                 {/* UPDATED: Rorisang's Phone */}
-                +27 76 465 1322
+                +27 62 166 1377
               </p>
             </div>
             <div className="social-link">
