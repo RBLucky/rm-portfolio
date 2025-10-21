@@ -5,9 +5,11 @@ import { useMediaQuery } from "react-responsive";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 const Services = () => {
-  const text = `I build secure, high-performance full-stack apps
-    with smooth UX to drive growth 
-    not headaches.`;
+  // UPDATED: New summary text relevant to Rorisang's services
+  const text = `I help brands and company owners build and maintain 
+    a professional online presence through 
+    strategic social media management.`;
+
   const serviceRefs = useRef([]);
   const isDesktop = useMediaQuery({ minWidth: "48rem" }); //768px
   useGSAP(() => {
@@ -28,7 +30,8 @@ const Services = () => {
   return (
     <section id="services" className="min-h-screen bg-black rounded-t-4xl">
       <AnimatedHeaderSection
-        subTitle={"Behind the scene, Beyond the screen"}
+        // UPDATED: New subtitle relevant to social media
+        subTitle={"Connecting Brands with Audiences"}
         title={"Service"}
         text={text}
         textColor={"text-white"}
@@ -63,6 +66,12 @@ const Services = () => {
                       </span>
                       {item.title}
                     </h3>
+                    {/* UPDATED: Added a check for item.description */}
+                    {item.description && (
+                      <p className="text-base lg:text-lg text-white/50 pl-16 -mt-1">
+                        {item.description}
+                      </p>
+                    )}
                     {itemIndex < service.items.length - 1 && (
                       <div className="w-full h-px my-2 bg-white/30" />
                     )}
